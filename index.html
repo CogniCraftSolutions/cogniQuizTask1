@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>True/False Quiz Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="quiz-container">
+  <h1>True/False Quiz</h1>
+  <div id="question-container"></div>
+  <div id="answer-buttons" class="btn-container">
+    <button class="btn" onclick="checkAnswer(true)" id="true-button" disabled>True</button>
+    <button class="btn" onclick="checkAnswer(false)" id="false-button" disabled>False</button>
+  </div>
+  <div id="explanation"></div>
+  <div id="score">Score: 0</div>
+  <button id="next-button" class="btn" onclick="nextQuestion()" disabled>Next</button>
+</div>
+
+<script src="quiz.js"></script>
+
+</body>
+</html>
